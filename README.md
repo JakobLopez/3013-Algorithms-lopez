@@ -1,3 +1,3 @@
 # 3013-Algorithms-lopez
-Jakob Lopez
+**Jakob Lopez**
 thejakoblopez@gmail.com
