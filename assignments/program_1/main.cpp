@@ -1,3 +1,8 @@
+//Jakob Lopez
+//3013 algorithms
+//thejakoblopez@gmail.comp
+//orderSert
+
 #include <iostream>
 #include <ctime>
 
@@ -166,6 +171,7 @@ int main()
   cout<<"============================================"<<endl;
   cout<<"New list"<<endl;
   cout<<endl;
+  
   
   for(int i=0;i<10;i++)
   {
