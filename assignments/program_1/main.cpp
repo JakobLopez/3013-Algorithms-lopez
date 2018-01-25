@@ -1,7 +1,16 @@
-//Jakob Lopez
-//3013 algorithms
-//thejakoblopez@gmail.comp
-//orderSert
+
+///////////////////////////////////////////////////////////////////////////////
+//                   YOU MUST COMPLETE AND COMMENT YOUR CODE!
+// Title:            Program 1
+// Files:            main.cpp
+// Semester:         3013 Algorithms Spring 2018
+//
+// Author:           Jakob Lopez
+// Email:            thejakoblopez@gmail.com
+// Description:
+//       This is a basic linked-list that allows numbers to be inserted either in the front or in order
+
+/////////////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
 #include <ctime>
