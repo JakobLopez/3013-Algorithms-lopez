@@ -1,6 +1,5 @@
 
 ///////////////////////////////////////////////////////////////////////////////
-//                   YOU MUST COMPLETE AND COMMENT YOUR CODE!
 // Title:            Program 1
 // Files:            main.cpp
 // Semester:         3013 Algorithms Spring 2018
