@@ -1,4 +1,5 @@
 ```
+//Jakob Lopez
 //BSTree.cpp
 //This file implements the class BSTree and struct node.
 //A BSTree is made of nodes, which hold a value and left/right node pointers.
