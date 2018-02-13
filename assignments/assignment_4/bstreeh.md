@@ -1,4 +1,5 @@
 ```
+//Jakob Lopez
 //BSTree.h
 //This file declares a struct and class. Public and private methods
 //are established, so that the .cpp file can define them.
