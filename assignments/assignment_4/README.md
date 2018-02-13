@@ -4,7 +4,7 @@
 
 <strong>Assignment:</strong> assignment_4
 
-<strong>Description:
+<strong>Description:</strong>
     		This is an implementation of a binary search tree. Items with a lesser 
 		value than the root will be placed to the root's left, and vice versa.
 		Because the tree is ordered, it searches in O(logn) ,and in worst case
