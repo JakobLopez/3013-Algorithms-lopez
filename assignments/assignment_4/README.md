@@ -12,6 +12,8 @@
 		visualize it.
 
 <strong>Files:</strong>
-    main.cpp
-    BSTree.cpp
-    BSTree.h
+<ul>
+    <li>main.cpp</li>
+    <li>BSTree.cpp</li>
+	 <li>BSTree.h</li>
+</ul>
