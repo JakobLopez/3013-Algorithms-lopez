@@ -3,12 +3,12 @@ Name: Jakob Lopez
 Date: February 27,2018
 Assignment: Program 2
 Description:
-    describe program here
+    Implementation of a Binary Search Tree. Tree is outputted to webgraphviz format.
+    Go to www.webgraphviz.com to see a visualization of tree
 
 Files:
-<ul>
-    <li>main.cpp</li>
-   <li>BSTree.cpp</li>
-   <li>BSTree.h</li>
-</ul>
+
+   -main.cpp
+   -BSTree.cpp
+   -BSTree.h
 ```
