@@ -1,4 +1,4 @@
-//BST.h
+//BSTree.h
 //This file declares a struct and class. Public and private methods
 //are established, so that the .cpp file can define them.
 
@@ -24,10 +24,13 @@ private:
 	int comparisons;
 	node *root;
 
+	//Inorder traversal print
 	void inorder(node*);
 
+	//postorder traversal print
 	void postorder(node*);
 
+	//preorder traversal print
 	void preorder(node*);
 
 	//Counts number of nodes
@@ -94,11 +97,15 @@ public:
 	// that can be used to visualize your expression tree.
 	void GraphVizOut(string filename);
 
+	//Returns number of comparisons made when looking for key
 	int totalComparisons();
 
+	//Inorder traversal print
 	void inorder();
 
+	//postorder traversal print
 	void postorder();
 
+	//preorder traversal print
 	void preorder();
 };
