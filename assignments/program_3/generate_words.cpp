@@ -3,8 +3,6 @@
 #include<sstream>
 #include<map>
 #include<string>
-#include "BST.h"
-#include "AVL.h"
 using namespace std;
 
 //Defines variable for number of words in each file
@@ -18,7 +16,6 @@ using namespace std;
 void closeFiles(ifstream&, ifstream&, ifstream&, ifstream&, ifstream&, fstream&);
 string combineRandomWords(string, string, string, string, string);
 string generateRandomWords(string*, string*, string*, string*, string*);
-void loadTrees(AVL&, BST&, string*,int);
 void loadArray(ifstream&, string*&);
 void openFiles(ifstream&, ifstream&, ifstream&, ifstream&, ifstream&, fstream&);
 
@@ -30,9 +27,6 @@ int main()
 	// declare stl map
 	map<string, string> wl;
 
-	//Declare instance of BST and AVL
-	BST B;
-	AVL A;
 
 	// create an iterator to loop over your <string:string> container
 	map<string, string>::iterator it;
@@ -79,14 +73,6 @@ int main()
 			wordFile << crazyword << endl;
 		}
 	}
-
-	
-	//Loads Binary Search Tree and AVL tree with words
-	loadTrees(A,B, adjWords, ADJECTIVEMAX);
-	loadTrees(A, B, nounWords, NOUNMAX);
-	loadTrees(A, B, verbWords, VERBMAX);
-	loadTrees(A, B, adverbWords, ADVERBMAX);
-	loadTrees(A,B, animalWords, ANIMALMAX);
 
 	//Closes files
 	closeFiles(adjIn, nounIn, verbIn, adverbIn, animalIn, wordFile);
@@ -230,28 +216,6 @@ void loadArray(ifstream &infile, string *&words)
 
 }
 
-/**
-* @FunctionName: loadTrees
-* @Description:
-*    Loops through an array of strings and inserts them in an AVL and BS tree
-* @Params:
-*    AVL &A - address of an AVL tree object
-*	 BST &B - address of a BS tree object
-*    string *wordComponent - pointer to an array of strings
-*	 int size - size of array
-* @Returns:
-*    void
-*/
-void loadTrees(AVL &A, BST &B, string* wordComponent, int size)
-{
-	for (int i = 0; i < size; i++)
-	{
-		//A.insert(wordComponent[i]);
-		B.insert(wordComponent[i]);
-	}
-}
-
-
 
 /**
 * @FunctionName: openFiles
@@ -267,10 +231,10 @@ void loadTrees(AVL &A, BST &B, string* wordComponent, int size)
 */
 void openFiles(ifstream& adjIn, ifstream& nounIn, ifstream& verbIn, ifstream& adverbIn, ifstream& animalIn, fstream& wordFile)
 {
-	adjIn.open("adjectives.dat");
-	nounIn.open("nouns.dat");
-	verbIn.open("verbs.dat");
-	adverbIn.open("adverbs.dat");
-	animalIn.open("animals.dat");
+	adjIn.open("adjectives.txt");
+	nounIn.open("nouns.txt");
+	verbIn.open("verbs.txt");
+	adverbIn.open("adverbs.txt");
+	animalIn.open("animals.txt");
 	wordFile.open("tenthousandwords.txt");
 }
