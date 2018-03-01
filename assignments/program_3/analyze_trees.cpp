@@ -1,3 +1,19 @@
+///////////////////////////////////////////////////////////////////////////////
+// Title:            Program 3 Part 2
+// Files:            main.cpp, BSTree.cpp/h, AVLtree.cpp/h, adjectives.txt
+//					 nouns.txt, verbs.txt, adverbs.txt, animals.txt, 
+//					 tenthousandwords.txt, analysis.out
+// Semester:         3013 Algorithms Spring 2018
+//
+// Author:           Jakob Lopez
+// Email:            thejakoblopez@gmail.com
+// Description:
+//       This program compares the performances of an AVL tree to a BS tree.
+//		 Word components are loaded into the trees. 10,000 crazy words are used
+//		 word-by-word to search the trees so a counter can be incremented.
+//		 This program is ran from command line.
+/////////////////////////////////////////////////////////////////////////////////
+
 #include<iostream>
 #include<fstream>
 #include<map>
@@ -171,12 +187,11 @@ void loadTrees(AVL &A, BST &B, ifstream& infile)
 		infile >> word;
 		if (m.find(word) == m.end())
 		{
-			//A.insert(word);
+			A.insert(word);
 			B.insert(word);
 		}
 		m[word] = "word";
 	}
-
 }
 
 /**
@@ -228,13 +243,9 @@ void searchTrees(AVL &A, BST &B, ifstream& wordFile)
 		//If word is not a space character
 		if (word != " ")
 		{
-			//A.search(word);
+			A.search(word);
 			B.search(word);
 		}
-
 		wordFile >> word;
-		
-
 	}
-
 }
