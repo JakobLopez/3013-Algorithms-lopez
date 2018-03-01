@@ -1,3 +1,4 @@
+```
 ///////////////////////////////////////////////////////////////////////////////
 // Title:            Program 3 Part 1
 // Files:            main.cpp,  adjectives.txt,  nouns.txt, verbs.txt, 
@@ -256,3 +257,4 @@ void openFiles(ifstream& adjIn, ifstream& nounIn, ifstream& verbIn, ifstream& ad
 	animalIn.open("animals.txt");
 	wordFile.open("tenthousandwords.txt");
 }
+```
