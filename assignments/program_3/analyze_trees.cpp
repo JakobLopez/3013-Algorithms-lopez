@@ -100,6 +100,7 @@ int main(int argc, char **argv)
 
 	//Closes files
 	closeFiles(adjIn, nounIn, verbIn, adverbIn, animalIn,ofile);
+	wordFile.close();
 	system("pause");
 	
 	return 0;
@@ -192,6 +193,7 @@ void loadTrees(AVL &A, BST &B, ifstream& infile)
 		}
 		m[word] = "word";
 	}
+
 }
 
 /**
@@ -246,6 +248,7 @@ void searchTrees(AVL &A, BST &B, ifstream& wordFile)
 			A.search(word);
 			B.search(word);
 		}
+
 		wordFile >> word;
 	}
 }
