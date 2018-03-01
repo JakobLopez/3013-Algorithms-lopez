@@ -1,3 +1,21 @@
+///////////////////////////////////////////////////////////////////////////////
+// Title:            Program 3 Part 1
+// Files:            main.cpp,  adjectives.txt,  nouns.txt, verbs.txt, 
+//		     adverbs.txt, animals.txt, tenthousandwords.txt
+//
+// Semester:         3013 Algorithms Spring 2018
+//
+// Author:           Jakob Lopez
+// Email:            thejakoblopez@gmail.com
+// Description:
+//       	 This program generates 10,000 crazy words. Word component files 
+//		 are read into arrays. A word component is then randomly chosen 
+//		 from the array by generating a random number for an index. 
+//		 Another random number is generated to determine which word combo
+//		 will be choses. Strings are concatenated to form a crazy word.
+//		 The crazy word is put into a map, so there will be no duplicates
+/////////////////////////////////////////////////////////////////////////////////
+
 #include<iostream>
 #include<fstream>
 #include<sstream>
