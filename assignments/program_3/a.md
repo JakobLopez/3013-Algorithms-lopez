@@ -1,3 +1,4 @@
+```
 ///////////////////////////////////////////////////////////////////////////////
 // Title:            Program 3 Part 2
 // Files:            main.cpp, BSTree.cpp/h, AVLtree.cpp/h, adjectives.txt
@@ -249,3 +250,4 @@ void searchTrees(AVL &A, BST &B, ifstream& wordFile)
 		wordFile >> word;
 	}
 }
+```
