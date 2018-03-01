@@ -4,9 +4,9 @@ Date: February 28,2018
 Assignment: Program 3
 Description:
   Part 1:
-    This program randomly generates 10,000 words. 5 different word component files are read into array and then randomly 
-    selected at an index to choose a random component. A heurisitic is designed to combine different versions of these 
-    word components in order to make a crazy word.
+    This program randomly generates 10,000 words. 5 different word component files are read into array and then 
+    randomly selected at an index to choose a random component. A heurisitic is designed to combine different 
+    versions of these word components in order to make a crazy word.
   Part 2:
     The word components are read into an AVL and BS tree. Each word component of the generated crazy word is search 
     for in the trees. A counter variable is placed in both trees so that we can compare the number of comparisons 
