@@ -8,10 +8,10 @@
 // Email:            thejakoblopez@gmail.com
 // Description:
 //       This program loads vertices into a graph with no edges and connects them
-//		 to their closest,unvisited,unconnected neighbor. No vertex has a degree 
-//		 higher than the max degree defined. After the graph has been connected,
-//		 its information is displayed so we can compare the different starting
-//		 cities.
+//	 to their closest,unvisited,unconnected neighbor. No vertex has a degree 
+//	 higher than the max degree defined. After the graph has been connected,
+//	 its information is displayed so we can compare the different starting
+//	 cities.
 /////////////////////////////////////////////////////////////////////////////////
 
 #include<iostream>
