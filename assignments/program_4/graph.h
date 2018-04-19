@@ -1,4 +1,6 @@
+//graph.h
 // A simple representation of graph using STL
+
 #pragma once
 #include <vector>
 #include <map>
@@ -12,6 +14,7 @@ using namespace std;
 typedef map<string, int> strMapInt;
 typedef map<int, int> intint;
 
+//represents latitude and longitude of a vertex
 struct latlon
 {
 	double lat;
@@ -187,6 +190,7 @@ class graph
 public:
 	int id;                      // id counter for new vertices
 	int num_edges;               // edge count
+	int totalWeight;
 	vector<vertex *> vertexList; // vector to hold vertices
 	strMapInt cityLookup;
 
@@ -196,6 +200,7 @@ public:
 	* Params:
 	*     string city
 	*     string state
+	*	  latlon ll
 	*/
 	vertex* createVertex(string city, string state, latlon ll)
 	{
@@ -209,14 +214,30 @@ public:
 	{
 		id = 0;
 		num_edges = 0;
+		totalWeight = 0;
 	}
 
+	//copy constructor
 	graph(const graph &G)
 	{
 		id = G.id;
 		num_edges = 0;
 		vertexList = G.vertexList;
 		cityLookup = G.cityLookup;
+		totalWeight = G.totalWeight;
+	}
+
+	//prints map of cityLookup
+	void printmap()
+	{
+		map<string, int>::iterator it;
+
+		for (it = cityLookup.begin(); it != cityLookup.end(); it++)
+		{
+			string key = it->first;        // first = array index 
+			int value = it->second;     // second = array value pointed to by index
+			cout << key << "->" << value << endl;
+		}
 	}
 
 	/**
@@ -299,6 +320,7 @@ public:
 
 	}
 
+	//Resets all visited status to false
 	void resetStatus()
 	{
 		vector<vertex *>::iterator vit;
@@ -306,6 +328,24 @@ public:
 		{
 			(*vit)->setStatus(false);
 		}
+	}
+
+	//adds weight to weight sum
+	void sumWeight(int w)
+	{
+		totalWeight += w;
+	}
+
+	//Returns total weight of all edges
+	int getTotalWeight()
+	{
+		return totalWeight;
+	}
+
+	//returns number of edges in graph
+	int getNumEdges()
+	{
+		return num_edges;
 	}
 
 	/**
