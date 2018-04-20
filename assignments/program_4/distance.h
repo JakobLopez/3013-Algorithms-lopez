@@ -1,3 +1,7 @@
+//distance.h
+//This header file finds the distance between 2 coordinates
+//using latitude and longitude
+
 #include <math.h>
 #include <cmath> 
 #define earthRadiusKm 6371.0
