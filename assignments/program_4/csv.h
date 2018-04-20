@@ -1,3 +1,6 @@
+//csv.h
+//This header file reads in the cities.csv file
+
 #include <iterator>
 #include <iostream>
 #include <fstream>
